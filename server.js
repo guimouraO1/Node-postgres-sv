@@ -51,7 +51,7 @@ server.delete('/videos/:id', (request, reply) => {
 
     database.delete(videoId)
 
-    return reply.status(204)
+    return reply.status(204).send()
 
 })
 
